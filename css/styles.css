@@ -1,0 +1,276 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1;
+  font-weight: 400;
+  color: #000;
+  height: 1000vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Inter', sans-serif;
+}
+
+.heading-secondary {
+  font-size: 4.5rem;
+}
+
+.container-md {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container-lg {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-padding {
+  padding: 9.6rem 0;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.section-header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.header-sub-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/*---------- Hero Section ----------*/
+.section-hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),url(images/download.png);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+.hero-heading {
+  color: #fff;
+  line-height: 1.2;
+  font-size: 6.5rem;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 1.6rem;
+  max-width: 50%;
+  line-height: 1.8;
+}
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+}
+
+.donate-btn {
+  background-color: #ff5959;
+  padding: 1.2rem 2rem;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  transition: 100ms all ease-in-out;
+}
+
+.donate-btn:hover {
+  background-color: #d34343;
+}
+
+
+
+/*---------- Hero Section ----------*/
+
+/*---------- Donate Section ----------*/
+#section-donate-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.4rem;
+  text-align: center;
+}
+
+.amounts {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.amount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 20px;
+  width: 135px;
+  height: 123px;
+  border-radius: 5px;
+}
+
+.amount span {
+  font-size: 3rem;
+  color: #707070;
+  font-weight: 700;
+}
+
+.active {
+  background-color: #ffeeee;
+  border: 2px solid #ff5959;
+}
+
+.active span {
+  color: #ff5959;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dadada;
+  margin-top: 3rem;
+  padding-bottom: 10px;
+  transition: 100ms all ease-in-out;
+}
+
+.input::placeholder {
+  color: #b3b3b3;
+  text-align: center;
+  margin-bottom: 5px;
+  letter-spacing: 0.75px;
+}
+
+.input:focus {
+  border-bottom: 1px solid #ff5959;
+}
+
+.input:focus::placeholder {
+  color: #ff5959;
+}
+/*---------- Donate Section ----------*/
+
+/*---------- Plans Section ----------*/
+.plans {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plan {
+  width: 360px;
+  height: 352px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  padding: 0 2rem;
+}
+
+.bg-light-green {
+  background-color: #edf5f6;
+}
+
+.bg-light-red {
+  background-color: #ffeeee;
+}
+
+.bg-light-yellow {
+  background-color: #fff4d6;
+}
+
+.plan img {
+  margin-bottom: 2rem;
+}
+
+.plan h3 {
+  font-size: 2.4rem;
+}
+
+.plan p {
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+/*---------- Plans Section ----------*/
+
+/*---------- Section Subscribe ----------*/
+#section-subscribe-content {
+  background-color: #fff4d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+}
+
+#section-subscribe-content input {
+  width: 275px;
+  height: 48px;
+  border: none;
+  background-color: #d9d9d9;
+  outline: none;
+  padding: 0 2rem;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transition: 100ms all ease-in-out;
+}
+
+#section-subscribe-content input:focus {
+  background-color: #fff;
+}
+
+#section-subscribe-content button {
+  height: 48px;
+  background-color: #ff5959;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0 4rem;
+  font-size: 1.6rem;
+}
+
+#section-subscribe-content button:hover {
+  background-color: #d34343;
+  transition: 100ms all ease-in-out;
+}
+/*---------- Section Subscribe ----------*/
